@@ -17,7 +17,7 @@ medical data. This would allow for a standardized approach to identifying potent
 that organs are allocated fairly.
 
 
-# Video Demo of The Project
+# Demo Video of The Project
 
 https://youtu.be/HdgfztelQ-M
 
