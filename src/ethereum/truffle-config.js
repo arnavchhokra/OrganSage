@@ -61,11 +61,11 @@ module.exports = {
 
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    // sepolia: {
-    //   provider: () => new HDWalletProvider("vibrant shuffle course yellow write scale fold depart eight gallery cool easy", "https://eth-sepolia.g.alchemy.com/v2/irqq-7WyYU2FKN-gzbTnggEDPt38py07"),
-    //   network_id: '11155111',
-    //   gas: 4465030     // Skip dry run before migrations? (default: false for public nets )
-    // },
+    sepolia: {
+    provider: () => new HDWalletProvider("keyphrase here","alchemy link here"),
+    network_id: '11155111',
+    gas: 4465030     // Skip dry run before migrations? (default: false for public nets )
+    },
 
     // Useful for private networks
     // private: {

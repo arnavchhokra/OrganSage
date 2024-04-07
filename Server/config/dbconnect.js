@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/OrganDonation', { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://arnav12:1991@cluster0.cwvtjx5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+});
 
 var db = mongoose.connection;
 
