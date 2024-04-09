@@ -1,7 +1,7 @@
 import Web3 from "web3";
 import configurations from "./build/contracts/OrganChain.json";
 
-const contractAddress = "0x62254a5bcB507dc90A3eE3fB9357Fb9Abd75ec54";
+const contractAddress = "0x966719Ed57e788483d6360cB2e7502B80C69a7EA";
 const contractABI = configurations.abi;
 const web3 = new Web3(Web3.givenProvider || "http://127.0.0.1:7545");
 const contract = new web3.eth.Contract(contractABI, contractAddress);

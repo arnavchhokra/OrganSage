@@ -43,13 +43,7 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
-    development: {
-      host: "127.0.0.1",     // Localhost (default: none)
-      port: 7545,            // Standard Ethereum port (default: none)
-      network_id: "*",       // Any network (default: none)
-    },
-
-    // Another network with more advanced options...
+   // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
     // network_id: 1342,       // Custom network
@@ -62,7 +56,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     sepolia: {
-    provider: () => new HDWalletProvider("keyphrase here","alchemy link here"),
+    provider: () => new HDWalletProvider("humor erupt consider account oak audit crime vivid lobster prefer sail maze","https://sepolia.infura.io/v3/7b125b4c130342fbbe828fb84b54c5bc"),
     network_id: '11155111',
     gas: 4465030     // Skip dry run before migrations? (default: false for public nets )
     },

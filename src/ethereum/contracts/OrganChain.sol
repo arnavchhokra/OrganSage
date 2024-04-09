@@ -37,23 +37,13 @@ contract OrganChain {
     address[] recipient_arr;
     address[] donor_arr;
 
-    modifier checkRecipientExist(address _addr) {
-        require(!Recipients[_addr].exist);
-        _;
-    }
-
-    modifier checkDonorExist(address _addr) {
-        require(!Donors[_addr].exist);
-        _;
-    }
-
     function addDonor(
         address _donor_addr,
         string memory _ipfsHash,
         string memory _EMRHash,
         string memory _organ,
         string memory _bloodgroup
-    ) public checkDonorExist(_donor_addr) checkRecipientExist(_donor_addr) {
+    ) public {
         Donor memory newDonor = Donor({
             donorId: _donor_addr,
             recipientId: address(0x0),
@@ -94,8 +84,6 @@ contract OrganChain {
         string memory _bloodgroup
     )
         public
-        checkRecipientExist(_recipient_addr)
-        checkDonorExist(_recipient_addr)
     {
         Recipient memory newRecipient = Recipient({
             recipientId: _recipient_addr,
